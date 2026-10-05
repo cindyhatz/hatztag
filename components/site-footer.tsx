@@ -14,7 +14,7 @@ export function SiteFooter() {
           </ul>
         </nav>
         <div className="text-sm text-muted-foreground md:text-right">
-          <p>{`© ${new Date().getFullYear()} CinnedXO Public Relations`}</p>
+          <p>{`© ${new Date().getFullYear()} CinnedXO — Public Relations Agency In The Music Industry`}</p>
           <p className="mt-1">Created by Cindy Hatzikontos &middot; Est. August 1, 2025</p>
         </div>
       </div>

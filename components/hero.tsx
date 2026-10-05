@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/10" />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pb-16 pt-32 md:pb-24">
-        <p className="mb-6 text-xs uppercase tracking-[0.3em] text-primary">Music Public Relations</p>
+        <p className="mb-6 text-xs uppercase tracking-[0.3em] text-primary">Public Relations Agency In The Music Industry</p>
         <h1 className="max-w-5xl text-balance font-serif text-5xl leading-[0.95] sm:text-7xl md:text-8xl lg:text-9xl">
           Your sound, <span className="italic text-primary neon-text">heard</span> everywhere it matters.
         </h1>

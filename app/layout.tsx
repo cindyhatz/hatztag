@@ -13,12 +13,12 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.cinnedxo.com'),
-  title: 'CinnedXO — Music Public Relations',
+  title: 'CinnedXO — Public Relations Agency In The Music Industry',
   description:
-    'CinnedXO is a music public relations agency building press campaigns, media strategy, and lasting reputations for artists, labels, and live events.',
+    'CinnedXO is a public relations agency in the music industry, building press campaigns, media strategy, and lasting reputations for artists, labels, and live events.',
   keywords: ['music PR', 'music publicist', 'artist publicity', 'press campaigns', 'music public relations'],
   openGraph: {
-    title: 'CinnedXO — Music Public Relations',
+    title: 'CinnedXO — Public Relations Agency In The Music Industry',
     description: 'Press campaigns and media strategy for artists, labels, and live events.',
     url: 'https://www.cinnedxo.com',
     siteName: 'CinnedXO',
