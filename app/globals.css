@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: dark;
+  --background: oklch(0.14 0.005 40);
+  --foreground: oklch(0.95 0.015 80);
+  --card: oklch(0.18 0.006 40);
+  --card-foreground: oklch(0.95 0.015 80);
+  --popover: oklch(0.18 0.006 40);
+  --popover-foreground: oklch(0.95 0.015 80);
+  --primary: oklch(0.7 0.3 350);
+  --primary-foreground: oklch(0.14 0.005 40);
+  --secondary: oklch(0.22 0.006 40);
+  --secondary-foreground: oklch(0.95 0.015 80);
+  --muted: oklch(0.22 0.006 40);
+  --muted-foreground: oklch(0.7 0.012 70);
+  --accent: oklch(0.7 0.3 350);
+  --accent-foreground: oklch(0.14 0.005 40);
+  --destructive: oklch(0.65 0.22 25);
+  --border: oklch(0.95 0.015 80 / 14%);
+  --input: oklch(0.95 0.015 80 / 18%);
+  --ring: oklch(0.7 0.3 350);
+  --radius: 0.25rem;
+}
+
+@utility neon-text {
+  text-shadow:
+    0 0 8px oklch(0.7 0.3 350 / 60%),
+    0 0 24px oklch(0.7 0.3 350 / 40%);
+}
+
+@utility neon-glow {
+  box-shadow:
+    0 0 12px oklch(0.7 0.3 350 / 55%),
+    0 0 32px oklch(0.7 0.3 350 / 30%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
